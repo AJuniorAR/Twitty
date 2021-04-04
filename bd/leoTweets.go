@@ -21,7 +21,7 @@ func LeoTweets(ID string, pagina int64) ([]*models.DevuelvoTweets, bool) {
 	var resultados []*models.DevuelvoTweets
 
 	condicion := bson.M{
-		"userId": ID,
+		"userid": ID,
 	}
 
 	opciones := options.Find()

@@ -12,7 +12,7 @@ import (
 func LeoTweets(w http.ResponseWriter, r *http.Request) {
 	ID := r.URL.Query().Get("id")
 	if len(ID) < 1 {
-		http.Error(w, "DEbe enviar el parametro id", http.StatusBadRequest)
+		http.Error(w, "Debe enviar el parametro id", http.StatusBadRequest)
 		return
 	}
 	if len(r.URL.Query().Get("pagina")) < 1 {
